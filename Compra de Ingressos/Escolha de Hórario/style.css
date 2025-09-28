@@ -1,0 +1,134 @@
+/* ===== Corpo da página ===== */
+body {
+  background-color: #0d0f27;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ===== Cabeçalho ===== */
+#banner {
+    display: flex;
+    gap: 10px; 
+    align-items: center; 
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+    background-color: blue;
+}
+
+#banner_img {
+    width: 70px;
+    height: 70px;
+}
+
+#banner_h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.filme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  /* muda de flex-start para center */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #1c1f3b;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* ===== Pôster ===== */
+.img-container {
+  width: 18%;
+  position: relative;
+}
+
+#img_principal {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#txt_img_principal {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.5); /* leve fundo escuro para destaque */
+}
+
+/* ===== Horários ===== */
+.horarios-container {
+  width: 70%;
+}
+
+/* Título acima do quadrado de horários */
+.titulo-horarios {
+  color: #ffd700;  /* dourado para destaque da promoção */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 5%;  /* afasta um pouco da parede esquerda */
+}
+
+#container_card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #090266;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  
+  justify-content: center;  /* centraliza os horários horizontalmente */
+  align-items: center;      /* centraliza os horários verticalmente */
+}
+
+/* Caixinhas individuais */
+.opcoes_genero {
+  border-radius: 10px;
+  background: linear-gradient(135deg, #090266, #1a0da8);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  min-width: 80px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.opcoes_genero:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1a0da8, #090266);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;   /* em telas menores, pôster em cima */
+    align-items: center;
+  }
+  
+  .img-container, .horarios-container {
+    width: 90%;
+  }
+  
+  #container_card {
+    justify-content: center;
+  }
+}
