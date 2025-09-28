@@ -1,34 +1,34 @@
 const filmes = 
 {
 acao: [
-  { titulo: "Vingadores", idade: "12", poster: "../Imagens/poster6.jpeg" },
-  { titulo: "Superman", idade: "12", poster: "../Imagens/poster4.jpg" },
-  { titulo: "Mad Max: Estrada da Fúria", idade: "14", poster: "../Imagens/postermadmax.jpg" },
-  { titulo: "John Wick", idade: "16", poster: "../Imagens/poster_jhonwick.jpg" }
+  { titulo: "Vingadores", idade: "12", poster: "Imagens/poster6.jpeg" },
+  { titulo: "Superman", idade: "12", poster: "Imagens/poster4.jpg" },
+  { titulo: "Mad Max: Estrada da Fúria", idade: "14", poster: "Imagens/postermadmax.jpg" },
+  { titulo: "John Wick", idade: "16", poster: "Imagens/poster_jhonwick.jpg" }
 ],
 comedia: [
-  { titulo: "A Grande Viagem de Sua Vida", idade: "L", poster: "../Imagens/poster2.jpeg" },
-  { titulo: "Se beber não case", idade: "14", poster: "../Imagens/poster_Sebebernaocase.jpg" },
-  { titulo: "Deadpool e Wolverine", idade: "16", poster: "../Imagens/poster_deadpool.webp" },
-  { titulo: "Esqueceram de mim 2", idade: "L", poster: "../Imagens/poster_esqueceramDeMIm.webp" }
+  { titulo: "A Grande Viagem de Sua Vida", idade: "L", poster: "Imagens/poster2.jpeg" },
+  { titulo: "Se beber não case", idade: "14", poster: "Imagens/poster_Sebebernaocase.jpg" },
+  { titulo: "Deadpool e Wolverine", idade: "16", poster: "Imagens/poster_deadpool.webp" },
+  { titulo: "Esqueceram de mim 2", idade: "L", poster: "Imagens/poster_esqueceramDeMIm.webp" }
 ],
 drama: [
-  { titulo: "A longa jornada", idade: "12", poster: "../Imagens/foto1_filme.avif" },
-  { titulo: "Titanic", idade: "14", poster: "../Imagens/poster7.jpg" },
-  { titulo: "O poderoso chefão", idade: "16", poster: "../Imagens/poster_PoderosoChefao.webp" },
-  { titulo: "A vida é bela", idade: "12", poster: "../Imagens/poster_VidaéBela.jpeg" }
+  { titulo: "A longa jornada", idade: "12", poster: "Imagens/foto1_filme.avif" },
+  { titulo: "Titanic", idade: "14", poster: "Imagens/poster7.jpg" },
+  { titulo: "O poderoso chefão", idade: "16", poster: "Imagens/poster_PoderosoChefao.webp" },
+  { titulo: "A vida é bela", idade: "12", poster: "Imagens/poster_VidaéBela.jpeg" }
 ],
 terror: [
-  { titulo: "It:A coisa", idade: "16", poster: "../Imagens/poster_it.jpeg" },
-  { titulo: "Invocação do mal", idade: "16", poster: "../Imagens/poster_InvocaoDoMal.png" },
-  { titulo: "Saw", idade: "18", poster: "../Imagens/poster_saw.jpg" },
-  { titulo: "O exorcista", idade: "18", poster: "../Imagens/poster_OExorcista.jpg" }
+  { titulo: "It:A coisa", idade: "16", poster: "Imagens/poster_it.jpeg" },
+  { titulo: "Invocação do mal", idade: "16", poster: "Imagens/poster_InvocaoDoMal.png" },
+  { titulo: "Saw", idade: "18", poster: "Imagens/poster_saw.jpg" },
+  { titulo: "O exorcista", idade: "18", poster: "Imagens/poster_OExorcista.jpg" }
 ],
 fantasia: [
-  { titulo: "Wicked", idade: "L", poster: "../Imagens/poster wicked.jpeg" },
-  { titulo: "Toy story 4", idade: "L", poster: "../Imagens/foto3_filme.avif" },
-  { titulo: "avatar", idade: "12", poster: "../Imagens/poster5.jpeg" },
-  { titulo: "Ne Zha 2", idade: "14", poster: "../Imagens/poster3.png" }
+  { titulo: "Wicked", idade: "L", poster: "Imagens/poster wicked.jpeg" },
+  { titulo: "Toy story 4", idade: "L", poster: "Imagens/foto3_filme.avif" },
+  { titulo: "avatar", idade: "12", poster: "Imagens/poster5.jpeg" },
+  { titulo: "Ne Zha 2", idade: "14", poster: "Imagens/poster3.png" }
 ]
 };
 
