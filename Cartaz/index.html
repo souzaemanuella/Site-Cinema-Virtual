@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Nome</title>
-    <link href="CinemaVirtual.css" rel="stylesheet">
+    <link href="Cartaz.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400&display=swap" rel="stylesheet"></head>
 <body style="background-color: #121530">
     <header>
         <div id="banner">
-            <img src="Imagens/logo.png" 
+            <img src="../Imagens/logo.png" 
                  alt="Icone" id="banner_img">
             <h1 id="banner_h1">Cinema</h1>
 
@@ -17,24 +17,24 @@
     </header>
             <div class="container">
         <div class="img-container">
-            <img id="img_principal" src="Imagens/poster wicked.jpeg">
+            <img id="img_principal" src="../Imagens/poster wicked.jpeg">
             <div id="txt_img_principal">Wicked</div>
             </div>
             <div id="frase">Libere a magia e venha ao cinema! Ingressos à venda, aproveite já!       😀</div>
         </div>
 
-        <div id="titulo">
+        <div class="titulo">
             <label> Em alta </label> 
         </div>
 
-        <!-- Area de exibir filmes-->
-            <div id="container_card">
+        <!-- Area de exibir filmes em alta-->
+            <div class="container_card">
     <div class="card_filmes">
         <div class="titulo_container">
-            <div class="titulo_filme">A longa jornada</div>
-            <div class="indicador v12">12</div>
+            <div class="titulo_filme">O poderoso chefao</div>
+            <div class="indicador v12">16</div>
         </div>
-        <img src="Imagens/poster5.jpeg" alt="Poster do filme" class="poster">
+        <img src="../Imagens/poster_PoderosoChefao.webp" alt="Poster do filme" class="poster">
     </div>
 
     <div class="card_filmes">
@@ -42,7 +42,7 @@
             <div class="titulo_filme">A Grande Viagem de sua vida</div>
             <div class="indicador v12">12</div>
         </div>
-        <img src="Imagens/poster6.jpeg" alt="Poster do filme" class="poster">
+        <img src="../Imagens/poster6.jpeg" alt="Poster do filme" class="poster">
     </div>
 
     <div class="card_filmes">
@@ -50,7 +50,7 @@
             <div class="titulo_filme">Toy Story 4</div>
             <div class="indicador l">L</div>
         </div>
-        <img src="Imagens/foto3_filme.avif" alt="Poster do filme" class="poster">
+        <img src="../Imagens/foto3_filme.avif" alt="Poster do filme" class="poster">
     </div>
 
     <div class="card_filmes">
@@ -58,21 +58,22 @@
             <div class="titulo_filme">Superman</div>
             <div class="indicador v12">12</div>
         </div>
-        <img src="Imagens/poster7.jpg" alt="Poster do filme" class="poster">
+        <img src="../Imagens/poster7.jpg" alt="Poster do filme" class="poster">
     </div>
 </div>
 
-        <div id="titulo">
+        <!-- Area de exibir filmes lançamentos do mes-->
+        <div class="titulo">
             <label> Lançamentos do mês </label> 
         </div>
 
- <div id="container_card">
+ <div class="container_card">
     <div class="card_filmes">
         <div class="titulo_container">
             <div class="titulo_filme">A longa jornada</div>
             <div class="indicador v12">12</div>
         </div>
-        <img src="Imagens/foto1_filme.avif" alt="Poster do filme" class="poster">
+        <img src="../Imagens/foto1_filme.avif" alt="Poster do filme" class="poster">
     </div>
 
     <div class="card_filmes">
@@ -80,7 +81,7 @@
             <div class="titulo_filme">A Grande Viagem de sua vida</div>
             <div class="indicador v12">12</div>
         </div>
-        <img src="Imagens/poster2.jpeg" alt="Poster do filme" class="poster">
+        <img src="../Imagens/poster2.jpeg" alt="Poster do filme" class="poster">
     </div>
 
     <div class="card_filmes">
@@ -88,7 +89,7 @@
             <div class="titulo_filme">Ne Zha 2</div>
             <div class="indicador l">L</div>
         </div>
-        <img src="Imagens/poster3.png" alt="Poster do filme" class="poster">
+        <img src="../Imagens/poster3.png" alt="Poster do filme" class="poster">
     </div>
 
 
@@ -97,58 +98,42 @@
             <div class="titulo_filme">Superman</div>
             <div class="indicador v12">12</div>
         </div>
-        <img src="Imagens/poster4.jpg" alt="Poster do filme" class="poster">
+        <img src="../Imagens/poster4.jpg" alt="Poster do filme" class="poster">
     </div>
  </div>
 
-    <div id="titulo">
+    <!-- Area de exibir filmes por genero-->
+    <div class="titulo">
             <label> Escolha por gênero </label> 
     </div>
         <div id="generos">
+            <div class="opcoes_genero opcoes_genero_selecionado">Ação</div>
             <div class="opcoes_genero">Comédia</div>
-            <div class="opcoes_genero">Ação</div>
             <div class="opcoes_genero">Drama</div>
             <div class="opcoes_genero">Terror</div>
             <div class="opcoes_genero">Fantasia</div>
         </div>
 
-        <div id="container_card">
-            <div class="card_filmes">
-                <div class="titulo_container">
-                    <div class="titulo_filme">A longa jornada</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/foto1_filme.avif" alt="Poster do filme" class="poster">
-            </div>
+        <div class="container_card" id="container_generos"></div>
 
-            <div class="card_filmes">
-                <div class="titulo_container">
-                    <div class="titulo_filme">A Grande Viagem de sua vida</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/poster2.jpeg" alt="Poster do filme" class="poster">
-            </div>
-
-            <div class="card_filmes">
-                <div class="titulo_container">
-                    <div class="titulo_filme">Toy Story 4</div>
-                    <div class="indicador l">L</div>
-                </div>
-                <img src="Imagens/poster3.png" alt="Poster do filme" class="poster">
-            </div>
-
-            <div class="card_filmes">
-                <div class="titulo_container">
-                    <div class="titulo_filme">Superman</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/poster4.jpg" alt="Poster do filme" class="poster">
-            </div>
+        <!-- Area footer simples-->
+        <div id="footer">
+        <div class="footer_coluna">
+            <h3 class="footer_titulo">Menu</h3>
+            <a class="footer_txt" href="index.html">Cartaz</a>
+            <a class="footer_txt" href="placeholder.html">Bilheteria</a> <!--Coloca o arq da bilheteria aq tbm-->
+        </div>
+        <div class="footer_coluna">
+            <h3 class="footer_titulo">Nossas redes</h3>
+            <a class="footer_txt">Instagram</a>
+            <a class="footer_txt">Facebook</a>
+            <a class="footer_txt">Twitter</a>
+        </div>
 </div>
 
 
 
 
-    <script src="CinemaVirtual.js"></script>
+   <script src="CinemaVirtualCartaz.js"></script>
     </body>
 </html>
