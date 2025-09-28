@@ -9,118 +9,138 @@ body {
 /* ===== Cabeçalho ===== */
 #banner {
     display: flex;
-    gap: 10px; 
+    gap: 1.5%; 
     align-items: center; 
-    padding: 10px 20px;
-    border-bottom: 2px solid #ccc;
+    padding: 0.8% 2%;
+    border-bottom: 0.2% solid #ccc;
     background-color: blue;
 }
 
 #banner_img {
-    width: 70px;
-    height: 70px;
+    width: 5%;
+    height: auto;
 }
 
 #banner_h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
 }
 
+/* ===== Container do filme ===== */
 .filme-wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;  /* muda de flex-start para center */
-  gap: 30px;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 15px;
+  align-items: center;
+  gap: 2%;
+  max-width: 70%;
+  margin: 2% auto;
+  padding: 2%;
   background-color: #1c1f3b;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  border-radius: 2%;
+  box-shadow: 0 0.5% 1.4% rgba(0,0,0,0.4);
 }
 
 /* ===== Pôster ===== */
 .img-container {
-  width: 18%;
+  width: 17%;
   position: relative;
 }
 
 #img_principal {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 4%;
 }
 
 #txt_img_principal {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 5%;
+  left: 5%;
   color: white;
   font-family: 'Cinzel', serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 8px;
-  background: rgba(0,0,0,0.5); /* leve fundo escuro para destaque */
+  padding: 1% 3%;
+  border-radius: 8%;
+  background: rgba(0,0,0,0.55);
 }
 
 /* ===== Horários ===== */
 .horarios-container {
-  width: 70%;
+  width: 80%;
 }
 
 /* Título acima do quadrado de horários */
 .titulo-horarios {
-  color: #ffd700;  /* dourado para destaque da promoção */
+  color: #ffd700;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-left: 5%;  /* afasta um pouco da parede esquerda */
+  letter-spacing: 0.05rem;
+  margin-left: 3%;
 }
 
+/* ===== Sinopse ===== */
+.sinopse {
+  margin-top: 2%;
+  padding: 2%;
+  background-color: #25294a;
+  border-radius: 2%;
+  box-shadow: 0 0.4% 1% rgba(0,0,0,0.35);
+}
+
+.sinopse p {
+  margin: 0;
+  color: #f0f0f0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* ===== Faixa azul dos horários ===== */
 #container_card {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 2%;
   background-color: #090266;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  border-radius: 2%;
+  padding: 2%;
+  box-shadow: 0 0.4% 1% rgba(0,0,0,0.3);
   
-  justify-content: center;  /* centraliza os horários horizontalmente */
-  align-items: center;      /* centraliza os horários verticalmente */
+  justify-content: center;  
+  align-items: center;      
 }
 
 /* Caixinhas individuais */
 .opcoes_genero {
-  border-radius: 10px;
+  border-radius: 10%;
   background: linear-gradient(135deg, #090266, #1a0da8);
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  padding: 10px 18px;
+  padding: 1% 2%;
   cursor: pointer;
   transition: 0.2s;
   text-align: center;
-  min-width: 80px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  min-width: 8%;
+  box-shadow: 0 0.2% 0.6% rgba(0,0,0,0.35);
 }
 
 .opcoes_genero:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
   background: linear-gradient(135deg, #1a0da8, #090266);
 }
 
 /* ===== Responsividade ===== */
 @media (max-width: 900px) {
-  .container {
-    flex-direction: column;   /* em telas menores, pôster em cima */
+  .filme-wrapper {
+    flex-direction: column;
     align-items: center;
   }
   
