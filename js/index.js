@@ -25,17 +25,6 @@ const filmesCompletos = {
   20: { id: 20, genero: "fantasia", titulo: "Ne Zha 2",                          idade: "14", poster: "Imagens/poster3.png" }
 };
 
-//Passar o id dos cards da area de lançamento e em alta
-document.querySelectorAll(".secao-filmes .btn-comprar").forEach(btn => {
-  btn.addEventListener("click", (e) => {
-    const card = e.target.closest(".card_filmes");
-    const filmeId = card.dataset.filmeId;
-    if (filmeId) {
-      window.location.href = `compra.html?filmeId=${filmeId}`;
-    }
-  });
-});
-
 const cores = {
   "12": "rgb(238, 207, 69)",
   "14": "orange",
@@ -92,6 +81,18 @@ function mostrarFilmes(genero) {
     container.appendChild(card);
   });
 }
+
+//Passar o id dos cards da area de lançamento e em alta
+document.querySelectorAll(".secao-filmes .btn-comprar").forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    const card = e.target.closest(".card_filmes");
+    const filmeId = card.dataset.filmeId;
+    if (filmeId) {
+      window.location.href = `compra.html?filmeId=${filmeId}`;
+    }
+  });
+});
+
 
 mostrarFilmes('acao');
 
