@@ -82,16 +82,6 @@ function mostrarFilmes(genero) {
   });
 }
 
-//Passar o id dos cards da area de lançamento e em alta
-document.querySelectorAll(".secao-filmes .btn-comprar").forEach(btn => {
-  btn.addEventListener("click", (e) => {
-    const card = e.target.closest(".card_filmes");
-    const filmeId = card.dataset.filmeId;
-    if (filmeId) {
-      window.location.href = `compra.html?filmeId=${filmeId}`;
-    }
-  });
-});
 
 
 mostrarFilmes('acao');
@@ -111,4 +101,15 @@ document.querySelectorAll("#generos .opcoes_genero").forEach(op => {
         const genero = removerAcento(op.textContent);;
         mostrarFilmes(genero);
     });
+});
+
+//Passar o id dos cards da area de lançamento e em alta
+document.querySelectorAll(".secao-filmes .btn-comprar").forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    const card = e.target.closest(".card_filmes");
+    const filmeId = card.dataset.filmeId;
+    if (filmeId) {
+      window.location.href = `compra.html?filmeId=${filmeId}`;
+    }
+  });
 });
