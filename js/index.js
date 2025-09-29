@@ -90,7 +90,7 @@ function mostrarFilmes(genero) {
 mostrarFilmes('acao');
 
 function removerAcento(texto) {
-  return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const genero = removerAcento(op.textContent.trim());
 }
 
 document.querySelectorAll("#generos .opcoes_genero").forEach(op => {
