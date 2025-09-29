@@ -8,3 +8,4 @@ button.addEventListener('click', function(event) {
         alerta.style.display = 'none';
     }, 3000);
 })
+
