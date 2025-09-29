@@ -6,6 +6,8 @@ button.addEventListener('click', function(event) {
     alerta.style.display = 'block';
     setTimeout(() => {
         alerta.style.display = 'none';
+        window.location.href = "index.html";
     }, 3000);
 })
+
 
