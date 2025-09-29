@@ -1,169 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Cinema Cineterj</title>
-    <link href="Css/index.css" rel="stylesheet">
+    <title>Seleção da Sessão</title>
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #121530">
-
+<body>
+    <!-- Cabeçalho -->
     <header>
-        <div id="navbar">
-
-    <a href="index.html" class="nav-left">
-        <img src="Imagens/logo.png" alt="Icone" class="nav-logo">
-        <h1 class="nav-title">Cinema CineTerj</h1>
-    </a>
-
-    <nav class="nav-center">
-        <ul>
-            <li><a href="index.html">FILMES</a></li>
-            <li><a href="Programação.html">PROGRAMAÇÃO</a></li>
-
-
-        </ul>
-    </nav>
-
-    <div class="nav-right">
-        <a href="#" class="nav-action-icon">
-            </a>
-        <a href="#" class="btn-entrar">Entrar</a>
-        <a href="#" class="nav-action-icon">
-            </a>
-    </div>
-
-</div>
-
+        <div id="banner">
+            <img src="Imagens/logo.png" alt="Icone" id="banner_img">
+            <h1 id="banner_h1">Cinema</h1>
+        </div>
     </header>
 
-    <!-- Banner principal -->
-    <div class="container">
+    <!-- Conteúdo principal -->
+
+    <h2 class="titulo-horarios">Promoção Dia do Cinema 30/09 </h2>
+
+    <!-- Filme 1: Wicked -->
+    <div class="filme-wrapper">
         <div class="img-container">
-            <img id="img_principal" src="Imagens/poster wicked.jpeg" alt="Wicked">
-            <div id="txt_img_principal">Wicked</div>
-            <div class="tag-banner-prevenda">PRÉ-VENDA</div>
-        </div>
-        <div id="frase">Libere a magia e venha ao cinema! Ingressos à venda, aproveite já! 😀</div>
+                <img id="img_principal" src="Imagens/wicked-poster.png" alt="Poster do filme">
+                <div id="txt_img_principal">Wicked</div>
+            </div>
+            <div class="horarios-container">
+                <div id="container_card">
+                    <div class="opcoes_genero">14:00</div>
+                    <div class="opcoes_genero">16:30</div>
+                    <div class="opcoes_genero">19:00</div>
+                    <div class="opcoes_genero">21:30</div>
+                </div>
+                <div class="sinopse">
+         <p>
+            Em uma terra mágica, duas jovens bruxas, Elphaba e Glinda, formam uma amizade improvável enquanto enfrentam desafios, descobrem segredos e lutam contra o destino que as separa. "Wicked" é uma história encantadora sobre coragem, amor e a verdadeira natureza do bem e do mal.
+        </p>
     </div>
-
-    <!-- Seção Lançamentos do mês -->
-    <div class="secao-filmes">
-        <h2 class="titulo-secao">Em alta</h2>
-        <div class="container_card">
-            <div class="card_filmes" data-filme-id="19">
-                <div class="titulo_container">
-                    <div class="titulo_filme">Avatar</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/poster5.jpeg" alt="Poster do filme" class="poster">
-                <button class="btn-comprar">Comprar Ingresso</button>
-            </div>
-
-            <div class="card_filmes" data-filme-id="1">
-                <div class="titulo_container">
-                    <div class="titulo_filme">Vingadores: Ultimato</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/poster6.jpeg" alt="Poster do filme" class="poster">
-                <button class="btn-comprar">Comprar Ingresso</button>
-            </div>
-
-            <div class="card_filmes" data-filme-id="18">
-                <div class="titulo_container">
-                    <div class="titulo_filme">Toy Story 4</div>
-                    <div class="indicador l">L</div>
-                </div>
-                <img src="Imagens/foto3_filme.avif" alt="Poster do filme" class="poster">
-                <button class="btn-comprar">Comprar Ingresso</button>
-            </div>
-
-            <div class="card_filmes" data-filme-id="10">
-                <div class="titulo_container">
-                    <div class="titulo_filme">Titanic</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/poster7.jpg" alt="Poster do filme" class="poster">
-                <button class="btn-comprar">Comprar Ingresso</button>
-            </div>
+                
         </div>
     </div>
 
-    <div class="secao-filmes">
-        <h2 class="titulo-secao">Lançamentos do mês</h2>
-        <div class="container_card">
-            <div class="card_filmes" data-filme-id="9">
-                <div class="titulo_container">
-                    <div class="titulo_filme">A longa jornada</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/foto1_filme.avif" alt="Poster do filme" class="poster">
-                <button class="btn-comprar">Comprar Ingresso</button>
+    <!-- Filme 2: Avatar -->
+    <div class="filme-wrapper">
+        <div class="img-container">
+            <img id="img_principal" src="Imagens/avatar-poster.jpeg" alt="Poster do filme">
+            <div id="txt_img_principal">Avatar</div>
+        </div>
+        <div class="horarios-container">
+            <div id="container_card">
+                <div class="opcoes_genero">13:00</div>
+                <div class="opcoes_genero">15:30</div>
+                <div class="opcoes_genero">18:00</div>
+                <div class="opcoes_genero">20:30</div>
             </div>
-
-            <div class="card_filmes" data-filme-id="5">
-                <div class="titulo_container">
-                    <div class="titulo_filme">A Grande Viagem de sua vida</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/poster2.jpeg" alt="Poster do filme" class="poster">
-                <button class="btn-comprar">Comprar Ingresso</button>
-            </div>
-
-            <div class="card_filmes" data-filme-id="20">
-                <div class="titulo_container">
-                    <div class="titulo_filme">Ne Zha 2</div>
-                    <div class="indicador l">L</div>
-                </div>
-                <img src="Imagens/poster3.png" alt="Poster do filme" class="poster">
-                <button class="btn-comprar">Comprar Ingresso</button>
-            </div>
-
-            <div class="card_filmes" data-filme-id="2">
-                <div class="titulo_container">
-                    <div class="titulo_filme">Superman</div>
-                    <div class="indicador v12">12</div>
-                </div>
-                <img src="Imagens/poster4.jpg" alt="Poster do filme" class="poster">
-                <button class="btn-comprar">Comprar Ingresso</button>
-            </div>
+            <div class="sinopse">
+         <p>
+            Em um futuro distante, Jake Sully, um ex-fuzileiro paraplégico, é enviado ao planeta Pandora para participar de um programa que permite aos humanos controlar avatares, corpos híbridos de humanos e nativos Na'vi. Conforme Jake se integra à cultura Na'vi, ele se vê dividido entre sua lealdade aos humanos e sua crescente conexão com os habitantes de Pandora. "Avatar" é uma épica aventura de ficção científica que explora temas de ecologia, colonialismo e identidade.
+        </p>
+    </div>
         </div>
     </div>
 
-    <!-- Seção generos -->
-        <div class="secao-filmes">
-        <h2 class="titulo-secao">Escolha por gênero</h2>
-        <div id="generos">
-            <div class="opcoes_genero opcoes_genero_selecionado">Ação</div>
-            <div class="opcoes_genero">Comédia</div>
-            <div class="opcoes_genero">Drama</div>
-            <div class="opcoes_genero">Terror</div>
-            <div class="opcoes_genero">Fantasia</div>
+    <!-- Filme 3: Superman -->
+     <div class="filme-wrapper">
+        <div class="img-container">
+            <img id="img_principal" src="Imagens/superman-poster.jpg" alt="Poster do filme">
+            <div id="txt_img_principal">Superman</div>
         </div>
-        <div class="container_card" id="container_generos"></div>
+        <div class="horarios-container">
+            <div id="container_card">
+                <div class="opcoes_genero">12:30</div>
+                <div class="opcoes_genero">15:00</div>
+                <div class="opcoes_genero">17:30</div>
+                <div class="opcoes_genero">20:00</div>
+            </div>
+            <div class="sinopse">
+         <p>
+            Clark Kent, um jovem jornalista com habilidades sobre-humanas, descobre suas origens alienígenas e assume a identidade de Superman para proteger a Terra de ameaças. Com sua força incrível, visão de raio-x e capacidade de voar, ele luta contra vilões poderosos enquanto tenta manter sua vida secreta. "Superman" é uma história clássica de heroísmo, justiça e sacrifício.
+        </p>
     </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="footer_coluna">
-            <h3 class="footer_titulo">Menu</h3>
-            <a class="footer_txt" href="index.html">Cartaz</a>
-            <a class="footer_txt" href="Programação.html">Programação Especial Dia do Cinema 30/09 </a>
-            <a class="footer_txt" href="placeholder.html">Bilheteria</a>
         </div>
-        <div class="footer_coluna">
-            <h3 class="footer_titulo">Nossas redes</h3>
-            <a class="footer_txt">Instagram @CineTerj</a>
-            <a class="footer_txt">Facebook @CineTerj</a>
-            <a class="footer_txt">Twitter @CineTerj </a>
-        </div>
-        <div class="footer-content">
-            <p>&copy; 2025 Cinema CineTerj. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-
-    <script src="js/index.js"></script>
+    </div>
 
 </body>
 </html>
